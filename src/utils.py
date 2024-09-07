@@ -235,8 +235,9 @@ def read_conll(corpus_name):
                                 try:
                                     word, tag, ner = annotations[word_pos], annotations[pos_pos], annotations[iob_pos]
                                 except:
-                                    print(annotations)
+                                    # print(annotations)
                                     #raise ValueError("??")
+                                    pass
                                 if IOB =='IO':
                                 # Transform to IOB format if it is not already.
                                     if ner != 'O':
